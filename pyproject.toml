@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "roadwatch"
+version = "0.1.0"
+description = "A roadwork and road defect reporting API with location search and status history."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = ["fastapi==0.141.1", "pydantic==2.13.4", "uvicorn==0.52.1"]
+
+[project.optional-dependencies]
+dev = ["httpx==0.28.1"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
